@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: crowd-backend
+    env: python
+    pythonVersion: 3.10.14
+    buildCommand: |
+      apt-get update && apt-get install -y ffmpeg
+      pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
