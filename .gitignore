@@ -1,0 +1,50 @@
+# ------------------------
+# Python cache / build
+# ------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environment folders
+env/
+venv/
+.venv/
+
+# ------------------------
+# FastAPI uploaded/output files
+# ------------------------
+uploads/
+outputs/
+
+# YouTube / temp video converts
+*.avi
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.temp
+
+# ------------------------
+# Model weights
+# ------------------------
+*.pt
+*.onnx
+*.engine
+*.bin
+
+# ------------------------
+# IDE / Editor junk
+# ------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ------------------------
+# Render / deployment
+# ------------------------
+*.sqlite3
+*.db
+.cache/
